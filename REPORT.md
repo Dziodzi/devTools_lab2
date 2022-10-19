@@ -7,3 +7,9 @@
 ### 3. Найден последний коммит и создана ветка old-master; ###
 
 <a href="https://ibb.co/jRvDGTS"><img src="https://i.ibb.co/WtWfF6L/photo-2022-10-19-11-15-43.jpg" alt="photo-2022-10-19-11-15-43" border="0"></a>
+
+### 4. Определён коммит, в котором строчка 32 файла prisma/seed.ts изменялась в последний раз, и его дата; ###
+
+*git blame prisma/seed.ts*
+
+<a href="https://ibb.co/KFnZSbd"><img src="https://i.ibb.co/t8RfFQg/t4.jpg" alt="t4" border="0"></a>
