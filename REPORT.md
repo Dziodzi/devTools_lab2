@@ -4,6 +4,6 @@
 
 <a href="https://ibb.co/HD7W69x"><img src="https://i.ibb.co/XZXh1G3/photo-2022-10-19-11-12-00.jpg" alt="photo-2022-10-19-11-12-00" border="0"></a>
 
-### 3. Найден последний коммит и создана ветка old-master. ###
+### 3. Найден последний коммит и создана ветка old-master; ###
 
 <a href="https://ibb.co/jRvDGTS"><img src="https://i.ibb.co/WtWfF6L/photo-2022-10-19-11-15-43.jpg" alt="photo-2022-10-19-11-15-43" border="0"></a>
