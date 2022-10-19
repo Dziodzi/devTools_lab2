@@ -13,3 +13,12 @@
 *git blame prisma/seed.ts*
 
 <a href="https://ibb.co/KFnZSbd"><img src="https://i.ibb.co/t8RfFQg/t4.jpg" alt="t4" border="0"></a>
+
+### 5. Найден коммит, в котором проявился регресс. ###
+
+*npm install --save-dev jest*
+*git checkout master*
+*git bisect start*
+*git bisect bad*
+
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/Jshb8Yc/2022-10-19-130628377.png" alt="2022-10-19-130628377" border="0"></a>
