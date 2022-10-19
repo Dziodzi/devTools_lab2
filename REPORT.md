@@ -29,3 +29,7 @@
 *echo .env >> .gitignore* <br />
 
 <a href="https://ibb.co/VMdVT9v"><img src="https://i.ibb.co/TPZct2H/2022-10-19-131425092.png" alt="2022-10-19-131425092" border="0"></a>
+
+### 7. Автором коммитов в ветке feature стал я. Неприятно, но терпимо; ###
+
+<a href="https://ibb.co/KzzZJS6"><img src="https://i.ibb.co/vvv5SR1/2022-10-19-132453362.png" alt="2022-10-19-132453362" border="0"></a>
