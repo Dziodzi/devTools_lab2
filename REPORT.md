@@ -25,7 +25,7 @@
 
 ### 6. Удалён .env из всех коммитов и добавлен в .gitignore; ###
 
-git filter-branch --tree-filter "rm -f .env" -- --all <br />
-echo .env >> .gitignore <br />
+*git filter-branch --tree-filter "rm -f .env" -- --all* <br />
+*echo .env >> .gitignore* <br />
 
 <a href="https://ibb.co/VMdVT9v"><img src="https://i.ibb.co/TPZct2H/2022-10-19-131425092.png" alt="2022-10-19-131425092" border="0"></a>
