@@ -43,3 +43,21 @@
 *git merge feature* <br />
 
 <a href="https://imgbb.com/"><img src="https://i.ibb.co/31HXpjL/2022-10-19-132944540.png" alt="2022-10-19-132944540" border="0"></a>
+
+### 9. Проверьте целостность репозитория и убедитесь, что с ним всё в порядке. При наличии ошибок исправьте их. ###
+
+*git fsck*
+
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/F7XHXxH/2022-10-19-133256741.png" alt="2022-10-19-133256741" border="0"></a>
+
+### 10. Проверьте размер репозитория (папки .git) и добейтесь уменьшения его размера. ###
+
+*git gc --prune=now --aggressive*
+
+### 11. Длинный пункт ###
+
+*git remote add origin https://github.com/Dziodzi/devTools_lab2.git* <br />
+*git push -u origin master* <br />
+*git branch report* <br />
+*git add -p* <br />
+*e* <br />
