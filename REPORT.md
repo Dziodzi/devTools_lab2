@@ -33,3 +33,13 @@
 ### 7. Автором коммитов в ветке feature стал я. Неприятно, но терпимо; ###
 
 <a href="https://ibb.co/KzzZJS6"><img src="https://i.ibb.co/vvv5SR1/2022-10-19-132453362.png" alt="2022-10-19-132453362" border="0"></a>
+
+### 8. Включите запоминание разрешений конфликтов. Влейте ветку feature в master, разрешив конфликт при слиянии. Откатите слияние, внесите изменение в файл README.md и снова влейте ветку feature в master без ручного разрешения конфликта. ###
+*Да-да, мне лень переписывать это в обезличенном виде*
+
+*git config rerere.enabled true* <br />
+*git merge feature* <br />
+*git reset --hard HEAD~1* <br />
+*git merge feature* <br />
+
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/31HXpjL/2022-10-19-132944540.png" alt="2022-10-19-132944540" border="0"></a>
