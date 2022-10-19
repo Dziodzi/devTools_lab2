@@ -22,3 +22,10 @@
 *git bisect bad* <br />
 
 <a href="https://imgbb.com/"><img src="https://i.ibb.co/Jshb8Yc/2022-10-19-130628377.png" alt="2022-10-19-130628377" border="0"></a>
+
+### 6. Удалён .env из всех коммитов и добавлен в .gitignore; ###
+
+git filter-branch --tree-filter "rm -f .env" -- --all <br />
+echo .env >> .gitignore <br />
+
+<a href="https://ibb.co/VMdVT9v"><img src="https://i.ibb.co/TPZct2H/2022-10-19-131425092.png" alt="2022-10-19-131425092" border="0"></a>
