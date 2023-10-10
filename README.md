@@ -1,75 +1,23 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo_text.svg" width="320" alt="Nest Logo" /></a>
-</p>
+# ЛР 2. Нестандартные операции при работе с Git
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+## Цель работы
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+Получение навыков продвинутой работы с системой контроля версий Git и изучение механизмов его работы на глубоком уровне.
 
-## Description
+## Описание работы
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+Вам дан архив с Git-репозиторием, содержащим проект на TypeScript. Необходимо скачать его и выполнить задания, приведённые ниже, в порядке следования. Для запуска проекта вам потребуется Node.js и локальная база данных PostgreSQL (лучше в Docker-контейнере). Для заполнения БД данными используйте команду `npx ts-node prisma/seed.ts`. Чуть более подробный гайд по поднятию есть тут: [Гайд по поднятию Postgres в Docker](https://www.notion.so/Postgres-Docker-7644d9b350944c07aef83dadee024732?pvs=21).
 
-## Installation
+[mobile-dev-backend.zip](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/e211003c-ad31-4ae9-b0bc-872f9983fb7f/mobile-dev-backend.zip)
 
-```bash
-$ npm install
-```
-
-## Running the app
-
-```bash
-# development
-$ npm run start
-
-# watch mode
-$ npm run start:dev
-
-# production mode
-$ npm run start:prod
-```
-
-## Test
-
-```bash
-# unit tests
-$ npm run test
-
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
-```
-
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](LICENSE).
-
-    
+1. Запустите локальный веб-визуализатор репозитория и сделайте так, чтобы в нём отображалось нормальное описание репозитория.
+2. Перенесите все коммиты, находящиеся в ветке `ci`, в ветку `master` с объединением всех коммитов в один и изменением сообщения таким образом, чтобы оно полностью описывало все вносимые изменения. Удалите ветку `ci`.
+3. В репозитории есть несколько альтернативных историй проекта, недоступных из текущей версии графа **и не связанных с ней**. Найдите последний коммит любой из версий и создайте на нём ветку `old-master`.
+4. Определите коммит, в котором строчка 32 файла `prisma/seed.ts` изменялась в последний раз, и его дату.
+5. В проекте существует регресс, на который имеется тест, запускающийся по команде `npm run test`. Найдите коммит, в котором проявился регресс.
+6. В репозитории существует файл `.env`, содержащий конфиденциальную информацию. Удалите его из всех коммитов, где он присутствует, и добавьте в `.gitignore`.
+7. Сделайте так, чтобы автором коммитов в ветке `feature` были Вы. Для этого укажите в изменяемых коммитах почту, привязанную к GitHub, и своё ФИО.
+8. Включите запоминание разрешений конфликтов. Влейте ветку `feature` в `master`, разрешив конфликт при слиянии. Откатите слияние, внесите изменение в файл `README.md` и снова влейте ветку `feature` в `master` без ручного разрешения конфликта.
+9. Проверьте целостность репозитория и убедитесь, что с ним всё в порядке. При наличии ошибок исправьте их.
+10. Проверьте размер репозитория (папки `.git`) и добейтесь уменьшения его размера.
+11. В новой ветке `report` создайте файл `REPORT.md` с указанием использованных для выполнения предыдущих пунктов команд и скриншотов результатов работы (поместите их в папку `/docs`). После внесения всей информации сделайте несколько коммитов, каждый из которых будет содержать только те изменения файла `REPORT.md`, которые касаются отдельно взятого пункта (первый коммит добавит команды для первого пункта и соответствующие скриншоты, второй коммит — для второго и т.д.). Отдельным коммитом добавьте команды, которые использовались для поэтапной фиксации файла `REPORT.md`. Загрузите **приватный** репозиторий на GitHub, дайте доступ своему практику и создайте PR для слияния ветки `report` с добавлением ревьюера.
